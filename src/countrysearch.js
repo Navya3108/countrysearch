@@ -155,9 +155,7 @@ function CountrySearch() {
 
   return (
     <div style={styles.app}>
-      <header style={styles.header}>
-        <h1 style={styles.title}>Country Flags Search</h1>
-      </header>
+      
       
       <input
         type="text"
