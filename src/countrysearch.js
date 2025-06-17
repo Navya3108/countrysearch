@@ -32,9 +32,11 @@ const styles = {
     display: 'block',
     boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
   },
+  // Modified styles to center the grid content
   countriesGrid: {
-    display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))',
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'center', // This centers the items horizontally
     gap: '20px',
     marginTop: '40px',
   },
@@ -50,6 +52,7 @@ const styles = {
     justifyContent: 'space-between',
     alignItems: 'center',
     height: '180px',
+    width: '200px', // Set a fixed width for consistency in a flex layout
     cursor: 'pointer',
   },
   countryFlag: {
@@ -74,6 +77,7 @@ const styles = {
     fontSize: '1.2rem',
     marginTop: '50px',
     color: '#888',
+    width: '100%', // Ensure the message takes full width to be centered
   },
 };
 
