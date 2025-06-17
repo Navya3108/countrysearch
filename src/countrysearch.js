@@ -161,6 +161,7 @@ function CountrySearch() {
         style={styles.searchBar}
         value={searchTerm}
         onChange={handleSearchChange}
+        data-testid="search-input"
       />
 
       {isLoading ? (
@@ -174,14 +175,16 @@ function CountrySearch() {
                 style={styles.countryCard}
                 onMouseOver={handleMouseOver}
                 onMouseOut={handleMouseOut}
+                data-testid="country-card"
               >
                 <img
                   src={country.png}
                   alt={`Flag of ${country.common}`}
                   style={styles.countryFlag}
                   onError={(e) => { e.target.onerror = null; e.target.src='https://placehold.co/100x60/eee/ccc?text=No+Flag'; }}
+                  data-testid="country-flag"
                 />
-                <h2 style={styles.countryName}>{country.common}</h2>
+                <h2 style={styles.countryName} data-testid="country-name">{country.common}</h2>
               </div>
             ))
           ) : (
