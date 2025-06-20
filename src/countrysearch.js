@@ -172,7 +172,7 @@ function CountrySearch() {
                   onError={(e) => { e.target.onerror = null; e.target.src='https://placehold.co/100x60/eee/ccc?text=No+Flag'; }}
                   data-testid="country-flag"
                 />
-                <h3 style={styles.name} data-testid="country-name">{country.common}</h3>
+                <p style={styles.name} data-testid="country-name">{country.common}</p>
               </div>
             ))
           ) : (
