@@ -31,7 +31,6 @@ const styles = {
     display: 'block',
     boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
   },
-  // Style for the container wrapping all the country cards
   countriesContainer: {
     display: 'flex',
     flexWrap: 'wrap',
@@ -39,7 +38,6 @@ const styles = {
     gap: '20px',
     padding: '20px',
   },
-  // Style for each individual country card, inspired by your 'Countries' component
   card: {
     display: 'flex',
     alignItems: 'center',
@@ -161,6 +159,7 @@ function CountrySearch() {
             filteredCountries.map((country) => (
               <div 
                 key={country.common} 
+                className="countryCard" // Added className as requested
                 style={styles.card}
                 onMouseOver={handleMouseOver}
                 onMouseOut={handleMouseOut}
